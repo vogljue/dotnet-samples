@@ -3,9 +3,9 @@ using System;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using carservice.Utilities;
+using Carservice.Utilities;
 
-namespace carservice.Services
+namespace Carservice.Services
 {
     /// <summary>
     /// Represents the service interface..

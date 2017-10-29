@@ -1,7 +1,7 @@
 // Car class in C# (Tutorial).
 using System.Runtime.Serialization;
 
-namespace carservice.Entities
+namespace Carservice.Entities
 {
     /// <summary>
     /// Represents the car class.

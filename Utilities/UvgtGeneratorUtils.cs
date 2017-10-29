@@ -3,7 +3,7 @@ using System;
 using System.Data;
 using System.IO;
 
-namespace carservice.Utilities
+namespace Carservice.Utilities
 {
     /// <summary>
     /// Represents the UvgtFormatter class.

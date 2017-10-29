@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Runtime.Serialization;
 
-namespace carservice.Entities
+namespace Carservice.Entities
 {
     /// <summary>
     /// Represents the carport class.

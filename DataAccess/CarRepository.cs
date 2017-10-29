@@ -1,8 +1,8 @@
 // Car Repository in C#.
 using System.Collections.Generic;
-using carservice.Entities;
+using Carservice.Entities;
 
-namespace carservice.DataAccess
+namespace Carservice.DataAccess
 {
     public class CarRepository : IRepository<Car>
     {

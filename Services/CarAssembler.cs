@@ -1,9 +1,9 @@
 // DTO Assembler pattern in C#.
 using System;
 using System.Data;
-using carservice.Entities;
+using Carservice.Entities;
 
-namespace carservice.Services
+namespace Carservice.Services
 {
     public static class CarAssembler 
     {

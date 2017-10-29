@@ -3,10 +3,10 @@ using System.Data;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using carservice.Entities;
-using carservice.DataAccess;
+using Carservice.Entities;
+using Carservice.DataAccess;
 
-namespace carservice.Services
+namespace Carservice.Services
 {
     /// <summary>
     /// Represents the service interface..

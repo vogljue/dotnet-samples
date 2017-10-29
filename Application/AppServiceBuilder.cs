@@ -4,9 +4,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;  
 using NLog.Extensions.Logging;
-using carservice.Services;
+using Carservice.Services;
 
-namespace carservice.Application
+namespace Carservice.Application
 {
     public class AppServiceBuilder 
     {

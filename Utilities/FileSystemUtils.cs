@@ -4,7 +4,7 @@ using System.IO;
 using System.Text;
 using System.Runtime.Serialization.Json;
 
-namespace carservice.Utilities
+namespace Carservice.Utilities
 {
     
     /// <summary>

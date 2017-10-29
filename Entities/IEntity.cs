@@ -1,6 +1,6 @@
 // Entity Interface in C#.
 
-namespace carservice.Entities
+namespace Carservice.Entities
 {
     public interface IEntity
     {

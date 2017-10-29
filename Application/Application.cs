@@ -2,9 +2,9 @@ using System;
 using System.Data;
 using Microsoft.Extensions.DependencyInjection;  
 using Microsoft.Extensions.Logging;
-using carservice.Services;
+using Carservice.Services;
 
-namespace carservice.Application
+namespace Carservice.Application
 {
     /// <summary>
     /// Represents the application class.

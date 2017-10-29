@@ -1,8 +1,8 @@
 // Repository Interface in C#.
 using System.Collections.Generic;
-using carservice.Entities;
+using Carservice.Entities;
 
-namespace carservice.DataAccess
+namespace Carservice.DataAccess
 {
     public interface IRepository<T> where T: IEntity
     {
