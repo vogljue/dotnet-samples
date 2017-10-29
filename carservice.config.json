@@ -1,0 +1,11 @@
+{
+  "CarRepositoryOptions": {
+    "Server": "powerhost"
+  },
+  "CarServiceOptions": {
+    "Server": "powerhost"
+  },
+  "FooServiceOptions": {
+    "Server": "powerhost"
+  }
+}
