@@ -1,4 +1,5 @@
 // Car service class in C# (Tutorial).
+using System;
 using System.Data;
 using System.Collections.Generic;
 using Microsoft.Extensions.Logging;
@@ -11,7 +12,7 @@ namespace Carservice.Services
     /// <summary>
     /// Represents the service interface..
     /// </summary>
-    public interface ICarService  
+    public interface ICarService : IDisposable
     {
         void CreateCarport();
         DataSet ListCars();
@@ -29,7 +30,7 @@ namespace Carservice.Services
     /// <summary>
     /// Represents the service class.
     /// </summary>
-    public class CarService : ICarService  
+    public class CarService : ICarService
     {
         private readonly ILogger<CarService> _logger;
         private readonly string _server;
@@ -41,7 +42,12 @@ namespace Carservice.Services
             _server = options.Value.Server;
             _repository = new CarRepository();
         }
-        
+ 
+        public void Dispose()
+        {
+            _logger.LogInformation("Dispose on CarService.");
+        }
+
         public void CreateCarport()
         {
             _logger.LogInformation($"Creating carport test on server {_server}!");
@@ -61,15 +67,15 @@ namespace Carservice.Services
 
             Car carId = _repository.FindById(id);
             carId.setOwner(owner);
-        
             _repository.Update(carId);
         }
+        
         public DataSet ListCars()
         {
             _logger.LogInformation($"Listing carport test on server {_server}!");
 
             IEnumerable<Car> cars = _repository.findAll();
-            DataSet ds = new DataSet();
+            DataSet ds = new DataSet("CarDataSet");
             foreach (Car car in cars) {
                 DataSet dscar = CarAssembler.CreateDto(car);
                 ds.Merge(dscar);

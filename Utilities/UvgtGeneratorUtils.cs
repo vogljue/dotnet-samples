@@ -42,7 +42,7 @@ namespace Carservice.Utilities
             if (obj == null) return (1);
             
             UvgtSortKey otherSortKey = (UvgtSortKey) obj;
-            return this.sortKey.CompareTo(otherSortKey);
+            return this.sortKey.CompareTo(otherSortKey.sortKey);
         }      
     }
     

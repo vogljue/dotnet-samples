@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hwtest.config>
+    <CarRepositoryOptions>
+    	<Server>powerhost</Server>
+    </CarRepositoryOptions>
+    <CarServiceOptions> 
+    	<Server>powerhost</Server>
+    </CarServiceOptions>
+    <FooServiceOptions>
+    	<Server>powerhost</Server>
+    </FooServiceOptions>
+</hwtest.config>

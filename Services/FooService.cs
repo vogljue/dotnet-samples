@@ -10,7 +10,7 @@ namespace Carservice.Services
     /// <summary>
     /// Represents the service interface..
     /// </summary>
-    public interface IFooService  
+    public interface IFooService : IDisposable
     {
         void DoFileService();
         void DoRegexService();
@@ -38,6 +38,11 @@ namespace Carservice.Services
             _server = options.Value.Server;
         }
 
+        public void Dispose()
+        {
+            _logger.LogInformation("Dispose on FooService.");
+        }
+
         public void DoFileService()
         {
             _logger.LogInformation($"Doing some File Utils tests on server {_server}!");
@@ -45,16 +50,6 @@ namespace Carservice.Services
             try {
                 _logger.LogInformation(FileSystemUtils.LoadHostsFile());
                 _logger.LogInformation(UvgtGeneratorUtils.BuildUvgtDataSet());
-                
-                /*
-                string gts1 = "12345678-12";
-                string gts2 = "12345678-AB";
-                _logger.LogInformation("ASCII Compare: {0}", gts1.CompareTo(gts2));
-                
-                string gts1e = FileSystemUtils.ConvertAsciiToEbcdic(gts1);
-                string gts2e = FileSystemUtils.ConvertAsciiToEbcdic(gts2);
-                _logger.LogInformation("EBCDIC Compare: {0}", gts1e.CompareTo(gts2e));
-                */
             }
             catch (Exception e)
             {
