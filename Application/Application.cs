@@ -36,6 +36,7 @@ namespace Carservice.Application
                 logger.LogInformation("FooService second run");
                 foo.DoFileService();
                 foo.DoRegexService();
+                foo.DoTupleService();
             }
 
             //do the actual work here

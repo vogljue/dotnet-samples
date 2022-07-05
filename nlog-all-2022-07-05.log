@@ -1,0 +1,71 @@
+2022-07-05 13:04:17.4354|0|Carservice.Application.Program|INFO|Starting application 
+2022-07-05 13:04:17.4867|0|Carservice.Application.Program|INFO|FooService first run 
+2022-07-05 13:04:17.4889|0|Carservice.Services.FooService|INFO|Doing some File Utils tests on server powerhost! 
+2022-07-05 13:04:17.4941|0|Carservice.Services.FooService|INFO|Current working directory: /home/cabox/workspace/dotnet-samples 
+2022-07-05 13:04:17.4958|0|Carservice.Services.FooService|INFO|=== Reading file /etc/hosts ===
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
+127.0.0.1 localhost.localdomain localhost
+# Auto-generated hostname. Please do not remove this comment.
+172.53.28.75 DotNetContainer
+::1		localhost ip6-localhost ip6-loopback
+=== EOF ===
+ 
+2022-07-05 13:04:17.5164|0|Carservice.Services.FooService|INFO|BBNR 12345678. GTS-NR 01-111. GTS-NAME GTSTest-111. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-222. GTS-NAME Gefahrtarifstelle-222. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-AAA. GTS-NAME Gefahrtarifstelle-AAA. BBNR-WH 12345678.
+ 
+2022-07-05 13:04:17.5178|0|Carservice.Services.FooService|INFO|Doing some Regex tests on server powerhost! 
+2022-07-05 13:04:17.5227|0|Carservice.Services.FooService|INFO|Regex match K4B.W11.PRUEFLST,T171001 
+2022-07-05 13:04:17.5227|0|Carservice.Services.FooService|INFO|Regex group lauf W11 dsn PRUEFLST 
+2022-07-05 13:04:17.5227|0|Carservice.Services.FooService|INFO|Regex match K4B.W11.LASER0,T171001 
+2022-07-05 13:04:17.5236|0|Carservice.Services.FooService|INFO|Regex group lauf W11 dsn LASER0 
+2022-07-05 13:04:17.5236|0|Carservice.Services.FooService|INFO|Regex match K4B.W21.PRUEFLST,T171001 
+2022-07-05 13:04:17.5236|0|Carservice.Services.FooService|INFO|Regex group lauf W21 dsn PRUEFLST 
+2022-07-05 13:04:17.5236|0|Carservice.Services.FooService|INFO|Dispose on FooService. 
+2022-07-05 13:04:17.5248|0|Carservice.Application.Program|INFO|FooService second run 
+2022-07-05 13:04:17.5248|0|Carservice.Services.FooService|INFO|Doing some File Utils tests on server powerhost! 
+2022-07-05 13:04:17.5248|0|Carservice.Services.FooService|INFO|Current working directory: /home/cabox/workspace/dotnet-samples 
+2022-07-05 13:04:17.5248|0|Carservice.Services.FooService|INFO|=== Reading file /etc/hosts ===
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
+127.0.0.1 localhost.localdomain localhost
+# Auto-generated hostname. Please do not remove this comment.
+172.53.28.75 DotNetContainer
+::1		localhost ip6-localhost ip6-loopback
+=== EOF ===
+ 
+2022-07-05 13:04:17.5260|0|Carservice.Services.FooService|INFO|BBNR 12345678. GTS-NR 01-111. GTS-NAME GTSTest-111. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-222. GTS-NAME Gefahrtarifstelle-222. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-AAA. GTS-NAME Gefahrtarifstelle-AAA. BBNR-WH 12345678.
+ 
+2022-07-05 13:04:17.5260|0|Carservice.Services.FooService|INFO|Doing some Regex tests on server powerhost! 
+2022-07-05 13:04:17.5267|0|Carservice.Services.FooService|INFO|Regex match K4B.W11.PRUEFLST,T171001 
+2022-07-05 13:04:17.5267|0|Carservice.Services.FooService|INFO|Regex group lauf W11 dsn PRUEFLST 
+2022-07-05 13:04:17.5267|0|Carservice.Services.FooService|INFO|Regex match K4B.W11.LASER0,T171001 
+2022-07-05 13:04:17.5267|0|Carservice.Services.FooService|INFO|Regex group lauf W11 dsn LASER0 
+2022-07-05 13:04:17.5275|0|Carservice.Services.FooService|INFO|Regex match K4B.W21.PRUEFLST,T171001 
+2022-07-05 13:04:17.5275|0|Carservice.Services.FooService|INFO|Regex group lauf W21 dsn PRUEFLST 
+2022-07-05 13:04:17.5474|0|Carservice.Services.FooService|INFO|Bereich Zahlen max: 10 
+2022-07-05 13:04:17.5486|0|Carservice.Services.FooService|INFO|Dispose on FooService. 
+2022-07-05 13:04:17.5514|0|Carservice.Services.CarService|INFO|Creating carport test on server powerhost! 
+2022-07-05 13:04:17.5526|0|Carservice.Services.CarService|INFO|Selling car test on server powerhost! 
+2022-07-05 13:04:17.5543|0|Carservice.Services.CarService|INFO|Listing carport test on server powerhost! 
+2022-07-05 13:04:17.5606|0|Carservice.Application.Program|INFO|DataSet <CarDataSet>
+  <Car>
+    <Id>1</Id>
+    <Model>Golf</Model>
+    <Vendor>VW</Vendor>
+    <Owner>Mike Coley</Owner>
+  </Car>
+  <Car>
+    <Id>2</Id>
+    <Model>Aygo</Model>
+    <Vendor>Toyota</Vendor>
+    <Owner>unkown</Owner>
+  </Car>
+</CarDataSet> 
+2022-07-05 13:04:17.5606|0|Carservice.Services.CarService|INFO|Dispose on CarService. 
+2022-07-05 13:04:17.5606|0|Carservice.Application.Program|INFO|Finishing application 

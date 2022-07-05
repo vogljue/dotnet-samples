@@ -1,5 +1,7 @@
 // Service class in C# (Tutorial).
 using System;
+using System.Linq;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
@@ -14,6 +16,8 @@ namespace Carservice.Services
     {
         void DoFileService();
         void DoRegexService();
+
+        void DoTupleService();
     }    
 
     /// <summary>
@@ -80,5 +84,69 @@ namespace Carservice.Services
                 }
             }
         }
+
+        public void DoTupleService()
+        {
+            // Named Tuples
+            List<int> zahlen = new List<int>() {2,4,6,8,10};
+            var tupleResult = Bereich(zahlen);
+            int minimum = tupleResult.min;
+
+            (int min, int maximum) = Bereich(zahlen);
+            Console.WriteLine(maximum);
+            _logger.LogInformation("Bereich Zahlen max: {0}", maximum);
+        
+            // Pattern Matching
+            object[] muster = { null, "Lukas" };
+            foreach (var item in muster)
+            {
+                IsMuster(item);
+            }
+
+            DateTime now = DateTime.Now;
+            Console.WriteLine($"{now} {PatternMatchingExtended(now)}");
+
+            // Indices und Bereiche
+            string[] vornamen = { "Jürgen", "Christoph", "Lukas", "Anton", "Dirk", "Gregor", "Luis", "Stefan" };
+        
+            Console.WriteLine($"Erster Vorname: {vornamen[0]}");
+            Console.WriteLine($"Letzter Vorname: {vornamen[^1]}");
+            Console.WriteLine($"Vorletzter Vorname: {vornamen[^2]}");
+            
+            Range r = 2..4;
+            var namen = vornamen[r];
+            foreach (var item in namen)
+            {
+                Console.WriteLine($"Range Vorname: {item}");
+            }
+
+        }
+        private (int min, int max) Bereich(List<int> zahlen)
+        {
+            int min = zahlen.Min();
+            int max = zahlen.Max();
+            return (min, max);
+        }
+
+        private void IsMuster(object item)
+        {
+            switch (item)
+            {
+                case null:
+                    Console.WriteLine("Nullwert");
+                    break;
+                case string s when s == "Lukas":
+                    Console.WriteLine("String mit Lukas");
+                    break;
+            }
+        }
+
+        private string PatternMatchingExtended(DateTime now) =>
+            now.DayOfWeek switch
+            {
+                DayOfWeek.Sunday => "Wochenende",
+                DayOfWeek.Saturday => "Wochenende",
+                _ => "Arbeitstag"
+            };
     }
 }

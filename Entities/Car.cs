@@ -18,6 +18,7 @@ namespace Carservice.Entities
         public string Vendor { get; set; }
         [DataMember]  
         public string Owner { get; set; }
+        
         #endregion
         
         #region Constructors
