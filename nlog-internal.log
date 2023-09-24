@@ -1,0 +1,5 @@
+2023-09-24 13:30:07.8013 Info Registered target NLog.Targets.FileTarget(Name=logfile)
+2023-09-24 13:30:07.8063 Info Registered target NLog.Targets.ConsoleTarget(Name=logconsole)
+2023-09-24 13:30:07.8155 Info NLog, Version=5.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c. File version: 5.2.4.2092. Product version: 5.2.4+5ed75b125a691ce9f01e64641f1a79f438385847. GlobalAssemblyCache: False
+2023-09-24 13:30:07.8315 Info Validating config: TargetNames=logfile, logconsole, ConfigItems=25, FilePath=/workspaces/dotnet-samples/bin/Debug/netcoreapp7.0/nlog.config
+2023-09-24 13:30:07.8423 Info Configuration initialized.

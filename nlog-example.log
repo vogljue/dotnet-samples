@@ -1,0 +1,71 @@
+2023-09-24 13:30:07.8491|Info|Starting application | 
+2023-09-24 13:30:07.8717|Info|FooService first run | 
+2023-09-24 13:30:07.8717|Info|Doing some File Utils tests on server powerhost! | 
+2023-09-24 13:30:07.8739|Info|Current working directory: /workspaces/dotnet-samples | 
+2023-09-24 13:30:07.8739|Info|=== Reading file /etc/hosts ===
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::0	ip6-localnet
+ff00::0	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+127.0.0.1	codespaces-d13859
+=== EOF ===
+ | 
+2023-09-24 13:30:07.8866|Info|BBNR 12345678. GTS-NR 01-111. GTS-NAME GTSTest-111. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-222. GTS-NAME Gefahrtarifstelle-222. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-AAA. GTS-NAME Gefahrtarifstelle-AAA. BBNR-WH 12345678.
+ | 
+2023-09-24 13:30:07.8866|Info|Doing some Regex tests on server powerhost! | 
+2023-09-24 13:30:07.8916|Info|Regex match K4B.W11.PRUEFLST,T171001 | 
+2023-09-24 13:30:07.8916|Info|Regex group lauf W11 dsn PRUEFLST | 
+2023-09-24 13:30:07.8916|Info|Regex match K4B.W11.LASER0,T171001 | 
+2023-09-24 13:30:07.8916|Info|Regex group lauf W11 dsn LASER0 | 
+2023-09-24 13:30:07.8916|Info|Regex match K4B.W21.PRUEFLST,T171001 | 
+2023-09-24 13:30:07.8916|Info|Regex group lauf W21 dsn PRUEFLST | 
+2023-09-24 13:30:07.8916|Info|Dispose on FooService. | 
+2023-09-24 13:30:07.8988|Info|FooService second run | 
+2023-09-24 13:30:07.8988|Info|Doing some File Utils tests on server powerhost! | 
+2023-09-24 13:30:07.8988|Info|Current working directory: /workspaces/dotnet-samples | 
+2023-09-24 13:30:07.8988|Info|=== Reading file /etc/hosts ===
+127.0.0.1	localhost
+::1	localhost ip6-localhost ip6-loopback
+fe00::0	ip6-localnet
+ff00::0	ip6-mcastprefix
+ff02::1	ip6-allnodes
+ff02::2	ip6-allrouters
+127.0.0.1	codespaces-d13859
+=== EOF ===
+ | 
+2023-09-24 13:30:07.8988|Info|BBNR 12345678. GTS-NR 01-111. GTS-NAME GTSTest-111. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-222. GTS-NAME Gefahrtarifstelle-222. BBNR-WH 12345678.
+BBNR 12345678. GTS-NR 01-AAA. GTS-NAME Gefahrtarifstelle-AAA. BBNR-WH 12345678.
+ | 
+2023-09-24 13:30:07.8988|Info|Doing some Regex tests on server powerhost! | 
+2023-09-24 13:30:07.8988|Info|Regex match K4B.W11.PRUEFLST,T171001 | 
+2023-09-24 13:30:07.8988|Info|Regex group lauf W11 dsn PRUEFLST | 
+2023-09-24 13:30:07.8988|Info|Regex match K4B.W11.LASER0,T171001 | 
+2023-09-24 13:30:07.9009|Info|Regex group lauf W11 dsn LASER0 | 
+2023-09-24 13:30:07.9009|Info|Regex match K4B.W21.PRUEFLST,T171001 | 
+2023-09-24 13:30:07.9009|Info|Regex group lauf W21 dsn PRUEFLST | 
+2023-09-24 13:30:07.9009|Info|Bereich Zahlen max: 10 | 
+2023-09-24 13:30:07.9054|Info|Dispose on FooService. | 
+2023-09-24 13:30:07.9054|Info|Creating carport test on server powerhost! | 
+2023-09-24 13:30:07.9054|Info|Selling car test on server powerhost! | 
+2023-09-24 13:30:07.9054|Info|Listing carport test on server powerhost! | 
+2023-09-24 13:30:07.9117|Info|DataSet <CarDataSet>
+  <Car>
+    <Id>1</Id>
+    <Model>Golf</Model>
+    <Vendor>VW</Vendor>
+    <Owner>Mike Coley</Owner>
+  </Car>
+  <Car>
+    <Id>2</Id>
+    <Model>Aygo</Model>
+    <Vendor>Toyota</Vendor>
+    <Owner>unkown</Owner>
+  </Car>
+</CarDataSet> | 
+2023-09-24 13:30:07.9117|Info|Dispose on CarService. | 
+2023-09-24 13:30:07.9117|Info|Finishing application | 
