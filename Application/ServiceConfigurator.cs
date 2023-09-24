@@ -18,7 +18,10 @@ namespace Carservice.Application
             IConfiguration config = configBuilder.Build();
 
             IServiceCollection serviceCollection = new ServiceCollection();
-            serviceCollection.AddLogging();
+            serviceCollection.AddLogging(loggingBuilder => 
+            {
+                loggingBuilder.AddNLog(config);
+            });
             serviceCollection.AddOptions();
             serviceCollection.Configure<CarServiceOptions>(config.GetSection("CarServiceOptions"));
             serviceCollection.Configure<FooServiceOptions>(config.GetSection("FooServiceOptions"));
@@ -28,7 +31,7 @@ namespace Carservice.Application
             
             //configure console logging
             //serviceProvider.GetService<ILoggerFactory>().AddConsole(LogLevel.Debug);
-            serviceProvider.GetService<ILoggerFactory>().AddNLog();
+            //serviceProvider.GetService<ILoggerFactory>().AddNLog();
          
             return serviceProvider;
         }
